@@ -115,7 +115,8 @@ public class ArrayList1 {
     
     public static void op4(){ // CASO nº4
         
-        Object [] array = lista.toArray();
+        Double [] array; 
+        array = lista.toArray(new Double[lista.size()]);
         JOptionPane.showMessageDialog(null,"Tu arrayList se ha transformado a un array: " + Arrays.toString(array));
     }
     
